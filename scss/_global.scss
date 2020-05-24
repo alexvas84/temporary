@@ -1,0 +1,177 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+}
+
+h1,
+h2 {
+	margin: 0;
+	font-size: inherit;
+}
+
+p {
+	margin: 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-fluid {
+	max-width: 100%;
+	margin: 0 auto;
+	// padding: 0 30px;
+}
+
+@media (max-width:720px) {
+	.container-fluid {
+		padding: 0 15px;
+	}
+}
+
+.btn {
+	font-size: 14px;
+	line-height: 14px;
+	color: #fff;
+	border-radius: 28px;
+	background-color: $btn;
+	font-weight: 400;
+	padding: 20px 30px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: 400;
+	max-width: 800px;
+}
+
+.tag {
+	font-size: 15px;
+	line-height: 30px;
+	color: #868c96;
+	background-color: #f1f3f6;
+	border-radius: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	min-height: 110px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+	box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+	padding: 0 30px;
+}
+
+.slick-next {
+	padding-right: 26px;
+	padding-left: 21px;
+	top: -130px;
+	right: 30px;
+	border-top-right-radius: 44px;
+	border-bottom-right-radius: 44px;
+	outline: none;
+
+	&::before {
+		content: '\f105';
+		font-family: 'icomoon';
+		font-size: 14px;
+		line-height: 14px;
+		color: #fff;
+	}
+}
+
+.slick-prev {
+	padding-right: 21px;
+	padding-left: 26px;
+	top: -130px;
+	right: 82px;
+	border-top-left-radius: 44px;
+	border-bottom-left-radius: 44px;
+	outline: none;
+
+	&::before {
+		content: '\f104';
+		font-family: 'icomoon';
+		font-size: 14px;
+		line-height: 14px;
+		color: #fff;
+	}
+}
+
+.maintitle {
+	font-size: 36px;
+	font-weight: 400;
+	margin: 0 auto 21px;
+	max-width: 705px;
+	text-align: center;
+
+	span {
+		color: $btn;
+	}
+}
+
+.maintext {
+	font-size: 16px;
+	line-height: 30px;
+	color: #555555;
+	margin-bottom: 50px;
+	margin: 0 auto 50px;
+	max-width: 705px;
+	text-align: center;
+}
+
+.product-wp {
+	padding-left: 25px;
+	background: url(../images/icons/wp.svg) left center no-repeat;
+}
+
+.product-psd {
+	padding-left: 25px;
+	background: url(../images/icons/psd.svg) left center no-repeat;
+}
+
+.product-html {
+	padding-left: 25px;
+	background: url(../images/icons/html.svg) left center no-repeat;
+}
+
+.product-sell {
+	padding-left: 24px;
+	background: url(../images/icons/cart-blue.svg) left center no-repeat;
+	background-size: 15px;
+}
